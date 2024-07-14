@@ -41,7 +41,7 @@ output.zip will be created here use this to upload to the request key update
 # actually signing the app bundle
 ```
 after ./gradlew assembleRelease to create the .apk
-creating appBundle .aab usually have to take place manually with the project folder as ./gradlew
+creating appBundle .aab usually has to take place manually with the project folder as ./gradlew
 bundleRelease
 
 acutally signing the appbundle .aab (using the exact same key that matches from my-release-key.jks
