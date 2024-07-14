@@ -6,6 +6,8 @@
 
 ![s1](https://github.com/c4pt000/google-signing-apps-and-keys/blob/main/signing-2.png)
 
+# changing key request first time
+
 ```
 Suggest using “randomstring”
 
@@ -51,6 +53,13 @@ google-key.txt)
 jarsigner -verbose -sigalg SHA256withRSA -digestalg SHA-256 -keystore my-release-key.jks
 APP_NAME__arm64-v8a-release.aab alias_name
 ```
+
+# if you acutally misplace the signing key completely
+
+generate a new my-release-key.jks file and export to the upload_Certificate.pem
+
+ keytool -export -rfc -keystore my-release-key.jks -alias upload -file upload_certificate.pem
+
 
 # cordova as an html/js app builder
 
