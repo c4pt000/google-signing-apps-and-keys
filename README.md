@@ -56,6 +56,10 @@ APP_NAME__arm64-v8a-release.aab alias_name
 
 # if you acutally misplace the signing key completely
 
+![s1](https://github.com/c4pt000/google-signing-apps-and-keys/releases/download/png/first-if-lose-1.png)
+
+![s1](https://github.com/c4pt000/google-signing-apps-and-keys/releases/download/png/if-lose-key-2.png)
+
 generate a new my-release-key.jks file and export to the upload_Certificate.pem
 
  keytool -export -rfc -keystore my-release-key.jks -alias upload -file upload_certificate.pem
