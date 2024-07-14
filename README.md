@@ -78,12 +78,11 @@ and my-release-key.jks should be kept safe
 
 cat google-key.txt
 
-keytool -genkey -v -keystore my-release-key.jks -alias alias_name -keyalg RSA -keysize 2048 -validity
-10000
+keytool -genkey -v -keystore my-release-key.jks -alias alias_name -keyalg RSA -keysize 2048 -validity 10000
 
 same exact key from google-key.txt
 
-keytool -export -rfc -keystore my-release-key.jks -alias upload -file upload_certificate.pem
+keytool -export -rfc -keystore my-release-key.jks -alias alias_name -file upload_certificate.pem
 ```
 
 # cordova as an html/js app builder
