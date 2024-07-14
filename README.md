@@ -54,7 +54,8 @@ jarsigner -verbose -sigalg SHA256withRSA -digestalg SHA-256 -keystore my-release
 APP_NAME__arm64-v8a-release.aab alias_name
 ```
 
-# this isnt usually necessary for a brand new app to be signed its only if a signing key is lost or misplaced to sign an application previously......
+# if you lose the signing key completely.....
+
 
 # if you acutally misplace the signing key completely (process takes 24-48 hours for google to approve the new upload key)
 
@@ -62,8 +63,9 @@ APP_NAME__arm64-v8a-release.aab alias_name
 
 ![s1](https://github.com/c4pt000/google-signing-apps-and-keys/releases/download/png/if-lose-key-2.png)
 
-# generate a new my-release-key.jks file save the google-key.txt with the new password randomstring and save the new my-release-key.jks and export to the upload_Certificate.pem
 
+
+# this isnt usually necessary for a brand new app to be signed its only if a signing key is lost or misplaced to sign an application previously......
 # then repeat step 1 for signing new app with a key
 
 ```
