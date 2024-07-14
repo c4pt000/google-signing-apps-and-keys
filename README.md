@@ -41,17 +41,22 @@ output.zip will be created here use this to upload to the request key update
 # actually signing the app bundle
 ```
 after ./gradlew assembleRelease to create the .apk
-creating appBundle .aab usually has to take place manually with the project folder as ./gradlew
-bundleRelease
+creating appBundle .aab usually has to take place manually with the project folder as
+
+./gradlew bundleRelease
 
 acutally signing the appbundle .aab (using the exact same key that matches from my-release-key.jks
 google-key.txt)
 
 jarsigner -verbose -sigalg SHA256withRSA -digestalg SHA-256 -keystore my-release-key.jks
 APP_NAME__arm64-v8a-release.aab alias_name
+```
 
+# cordova as an html/js app builder
+
+```
 see also cordova for actually building html/js applications completely
 
 npm -g install cordova serve
 ```
-```
+
