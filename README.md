@@ -1,7 +1,7 @@
 # google-signing-apps-and-keys
 
 
-![s1](https://github.com/c4pt000/google-signing-apps-and-keys/blob/main/signing-1.png)
+![s1](https://github.com/c4pt000/google-signing-apps-and-keys/releases/download/png/signing-1.png)
 
 
 ![s1](https://github.com/c4pt000/google-signing-apps-and-keys/blob/main/signing-2.png)
