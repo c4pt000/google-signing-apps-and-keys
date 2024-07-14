@@ -37,7 +37,9 @@ java -jar pepk.jar --keystore=my-release-key.jks --alias=alias_name --output=out
 --rsa-aes-encryption --encryption-key-path=encryption_public_key.pem
 
 output.zip will be created here use this to upload to the request key update
-
+```
+# actually signing the app bundle
+```
 after ./gradlew assembleRelease to create the .apk
 creating appBundle .aab usually have to take place manually with the project folder as ./gradlew
 bundleRelease
