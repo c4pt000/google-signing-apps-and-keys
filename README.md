@@ -61,7 +61,7 @@ npm -g install cordova serve
 cordova create myappname org.apache.cordova.myappname myappname
 cd myappname
 
-"code lives inside of the folder called wwww"
+"code lives inside of the folder called www and platform_www and app icon lives in www/img"
 
 cordova platform add android
 cordova platform add ios
