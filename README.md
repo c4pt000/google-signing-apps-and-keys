@@ -60,6 +60,9 @@ see also cordova for actually building html/js applications completely
 npm -g install cordova serve
 cordova create myappname org.apache.cordova.myappname myappname
 cd myappname
+
+"code lives inside of the folder called wwww"
+
 cordova platform add android
 cordova platform add ios
 
