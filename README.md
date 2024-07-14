@@ -67,6 +67,19 @@ APP_NAME__arm64-v8a-release.aab alias_name
 # then repeat step 1 for signing new app with a key
 
 ```
+
+randomstring > google-key.txt
+
+this string should be saved its your random password for the signing key
+and my-release-key.jks should be kept safe
+
+cat google-key.txt
+
+keytool -genkey -v -keystore my-release-key.jks -alias alias_name -keyalg RSA -keysize 2048 -validity
+10000
+
+same exact key from google-key.txt
+
 keytool -export -rfc -keystore my-release-key.jks -alias upload -file upload_certificate.pem
 ```
 
