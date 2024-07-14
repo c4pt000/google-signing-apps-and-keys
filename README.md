@@ -68,6 +68,7 @@ APP_NAME__arm64-v8a-release.aab alias_name
 # this isnt usually necessary for a brand new app to be signed its only if a signing key is lost or misplaced to sign an application previously......
 # then repeat step 1 for signing new app with a key
 
+* my own prefernce is to use the exact same java-keystore as my-release-key.jks for the upload-keystore.jks also
 ```
 
 randomstring > google-key.txt
