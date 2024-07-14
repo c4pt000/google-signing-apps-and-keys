@@ -54,16 +54,21 @@ jarsigner -verbose -sigalg SHA256withRSA -digestalg SHA-256 -keystore my-release
 APP_NAME__arm64-v8a-release.aab alias_name
 ```
 
-# if you acutally misplace the signing key completely
+# this isnt usually necessary for a brand new app to be signed its only if a signing key is lost or misplaced to sign an application previously......
+
+# if you acutally misplace the signing key completely (process takes 24-48 hours for google to approve the new upload key)
 
 ![s1](https://github.com/c4pt000/google-signing-apps-and-keys/releases/download/png/first-if-lose-1.png)
 
 ![s1](https://github.com/c4pt000/google-signing-apps-and-keys/releases/download/png/if-lose-key-2.png)
 
-generate a new my-release-key.jks file and export to the upload_Certificate.pem
+# generate a new my-release-key.jks file save the google-key.txt with the new password randomstring and save the new my-release-key.jks and export to the upload_Certificate.pem
 
- keytool -export -rfc -keystore my-release-key.jks -alias upload -file upload_certificate.pem
+# then repeat step 1 for signing new app with a key
 
+```
+keytool -export -rfc -keystore my-release-key.jks -alias upload -file upload_certificate.pem
+```
 
 # cordova as an html/js app builder
 
