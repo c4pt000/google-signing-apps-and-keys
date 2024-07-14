@@ -58,5 +58,11 @@ APP_NAME__arm64-v8a-release.aab alias_name
 see also cordova for actually building html/js applications completely
 
 npm -g install cordova serve
+cordova create myappname org.apache.cordova.myappname myappname
+cd myappname
+cordova platform add android
+cordova platform add ios
+
+cordova build android --release -- --packageType=bundle
 ```
 
