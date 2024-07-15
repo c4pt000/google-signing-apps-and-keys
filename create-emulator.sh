@@ -11,7 +11,7 @@ echo "******CAUTION*******"
 sleep 10s
 
 echo "where /root/Android/Sdk is the android-studio install dir"
-
+sudo -i
 cd /opt
 wget https://redirector.gvt1.com/edgedl/android/studio/ide-zips/2024.1.1.12/android-studio-2024.1.1.12-linux.tar.gz
 tar -xvf android-studio-2024.1.1.12-linux.tar.gz
