@@ -26,7 +26,8 @@ export PATH=$PATH:/usr/lib64/ccache:/usr/local/sbin:/usr/local/bin:/usr/sbin:/us
 source /root/.bashrc
 
 
-
+alias avdmanager=/root/Android/Sdk/cmdline-tools/latest/bin/avdmanager 
+alias sdkmanager='/root/Android/Sdk/cmdline-tools/latest/bin/sdkmanager  --sdk_root=/root/Android/Sdk'
 
 
 sdkmanager --install "platforms;android-29"
