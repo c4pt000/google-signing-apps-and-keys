@@ -20,7 +20,7 @@ sh android-studio/bin/studio.sh
 
 echo '
 export ANDROID_SDK_HOME=/root/Android/Sdk
-export PATH=$PATH:/usr/lib64/ccache:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/var/lib/snapd/snap/bin:/usr/bin/gradle-6.5.1/bin:/root/Android/Sdk/tools/bin:/root/Android/Sdk/tools:/root/Android/Sdk/platform-tools/:/root/Android/Sdk/build-tools/29.0.2/:/root/Android/Sdk/tools/bin/
+export PATH=$PATH:/usr/lib64/ccache:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/var/lib/snapd/snap/bin:/usr/bin/gradle-7.1/bin:/root/Android/Sdk/tools/bin:/root/Android/Sdk/tools:/root/Android/Sdk/platform-tools/:/root/Android/Sdk/build-tools/29.0.2/:/root/Android/Sdk/tools/bin/
 ' >> /root/.bashrc
 
 source /root/.bashrc
