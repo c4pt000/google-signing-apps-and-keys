@@ -13,8 +13,8 @@ sleep 10s
 echo "where /root/Android/Sdk is the android-studio install dir"
 
 cd /opt
-wget https://redirector.gvt1.com/edgedl/android/studio/ide-zips/2020.3.1.25/android-studio-2020.3.1.25-linux.tar.gz
-tar -xvf android-studio-2020.3.1.25-linux.tar.gz
+wget https://redirector.gvt1.com/edgedl/android/studio/ide-zips/2024.1.1.12/android-studio-2024.1.1.12-linux.tar.gz
+tar -xvf android-studio-2024.1.1.12-linux.tar.gz
 sh android-studio/bin/studio.sh
 
 
