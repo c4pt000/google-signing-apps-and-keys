@@ -55,8 +55,13 @@ creating appBundle .aab usually has to take place manually with the project fold
 acutally signing the appbundle .aab (using the exact same key that matches from my-release-key.jks
 google-key.txt)
 
-jarsigner -verbose -sigalg SHA256withRSA -digestalg SHA-256 -keystore my-release-key.jks
-APP_NAME__arm64-v8a-release.aab alias_name
+
+
+                                                                            #ignore this previously not signed properly -> jarsigner -verbose -sigalg SHA256withRSA -digestalg SHA-256 -keystore my-release-key.jks APP_NAME__arm64-v8a-release.aab alias_name
+
+jarsigner -verbose -sigalg SHA1withRSA -digestalg SHA1 -keystore my-release-key.jks -signedjar YOUR_APP-_arm64-v8a-release.aab YOUR_UNSIGNED_AAB__arm64-v8a.aab alias_name
+
+
 ```
 
 # if you lose the signing key completely.....
