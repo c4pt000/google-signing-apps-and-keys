@@ -16,7 +16,7 @@ cd /opt
 wget https://redirector.gvt1.com/edgedl/android/studio/ide-zips/2024.1.1.12/android-studio-2024.1.1.12-linux.tar.gz
 tar -xvf android-studio-2024.1.1.12-linux.tar.gz
 sh android-studio/bin/studio.sh
-
+#install cmdline-tools in studio
 
 echo '
 export ANDROID_SDK_HOME=/root/Android/Sdk
