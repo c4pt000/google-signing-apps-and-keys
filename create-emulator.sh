@@ -30,10 +30,10 @@ alias avdmanager=/root/Android/Sdk/cmdline-tools/latest/bin/avdmanager
 alias sdkmanager='/root/Android/Sdk/cmdline-tools/latest/bin/sdkmanager  --sdk_root=/root/Android/Sdk'
 
 
-sdkmanager --install "platforms;android-29"
-sdkmanager --install "build-tools;29.0.2"
-sdkmanager --install "system-images;android-29;google_apis_playstore;x86"
-echo "no" | avdmanager --verbose create avd --force --name Nexus --abi google_apis_playstore/x86 --package "system-images;android-29;google_apis_playstore;x86"
+sdkmanager --install "platforms;android-34"
+sdkmanager --install "build-tools;34.0.0"
+sdkmanager --install "system-images;android-34;google_apis_playstore;x86_64"
+echo "no" | avdmanager --verbose create avd --force --name Nexus --package "system-images;android-34;google_apis_playstore;x86_64"
 
 
 echo '
