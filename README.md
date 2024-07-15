@@ -1,8 +1,8 @@
-
+```
 java -jar bundletool-all-1.17.0.jar build-apks --bundle=Bit__arm64-v8a-release.aab --output=testing-my_app.apks --mode=universal 
 unzip -p testing-my_app.apks universal.apk > universal-testing.apk
 test universal-testing.apk as debug-signed works
-
+```
 # google-signing-apps-and-keys
 
 # step 1 new application signing
