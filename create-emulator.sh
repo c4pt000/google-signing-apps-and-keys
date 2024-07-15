@@ -42,14 +42,7 @@ QTWEBENGINE_DISABLE_SANDBOX=1 ./emulator @Nexus -no-boot-anim -netdelay none -no
 ' > /usr/bin/EMULATOR
 chmod +x /usr/bin/EMULATOR
 
-sed -s s'/rhgb/intel_iommu=on iommu=pt rhgb/g' /etc/default/grub > grub.txt
-cat grub.txt 
-cp -rf grub.txt /etc/default/grub 
-echo "y" |cp -rf grub.txt /etc/default/grub
-sed -s s'/GRUB_ENABLE_BLSCFG=true/GRUB_ENABLE_BLSCFG=false/g' /etc/default/grub > grub.txt
-rm -rf grub.txt
-grub2-mkconfig -o /boot/grub2/grub.cfg 
-grub2-mkconfig -o /boot/efi/EFI/fedora/grub.cfg
+
 
 
 echo "it is mandatory to reboot now"
