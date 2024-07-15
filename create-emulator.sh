@@ -50,3 +50,4 @@ echo "if kvm is loaded run the EMULATOR script"
 echo "on reboot"
 echo "lsmod | grep kvm"
 echo "/usr/bin/EMULATOR should spawn a Nexus style android emulator run adb install apkfilename.apk or "adb shell" then "logcat" to inspect running emulator, apk"
+https://play.google.com/store/apps/details?id=org.electrum.bit
