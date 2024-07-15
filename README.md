@@ -1,3 +1,5 @@
+java -jar bundletool-all-1.17.0.jar build-apks --bundle=Bit__arm64-v8a-release.aab --output=testing-my_app.apks --mode=universal --ks=my-release-key.jks --ks-key-alias=alias_name
+
 # google-signing-apps-and-keys
 
 # step 1 new application signing
