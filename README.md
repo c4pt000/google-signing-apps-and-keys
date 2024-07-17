@@ -3,6 +3,9 @@ java -jar bundletool-all-1.17.0.jar build-apks --bundle=Bit__arm64-v8a-release.a
 unzip -p testing-my_app.apks universal.apk > universal-testing.apk
 test universal-testing.apk as debug-signed works
 ```
+
+https://developer.android.com/build/building-cmdline#build_bundle
+
 # google-signing-apps-and-keys
 
 # step 1 new application signing
@@ -112,4 +115,14 @@ cordova platform add ios
 
 cordova build android --release -- --packageType=bundle
 ```
+
+bundletool build-apks --bundle=myapp_bundle.aab --output=myapp.apks --mode=universal
+unzip myapp.apks -d apks
+
+
+#same key used to create my-release-key.jks here from above
+~/opt/Android/Sdk/build-tools/34.0.0-version-here-of-buildtools/apksigner sign --ks my-release-key.jks --out testing-universal.apk apks/universal.apk
+
+
+
 
