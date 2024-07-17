@@ -116,6 +116,7 @@ cordova platform add ios
 cordova build android --release -- --packageType=bundle
 ```
 
+# testing an AAB to APK to test the AAB
 ```
 #testing aab
 wget https://github.com/c4pt000/google-signing-apps-and-keys/releases/download/png/777.aab.tar
