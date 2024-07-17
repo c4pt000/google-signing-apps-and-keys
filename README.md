@@ -116,13 +116,27 @@ cordova platform add ios
 cordova build android --release -- --packageType=bundle
 ```
 
-bundletool build-apks --bundle=myapp_bundle.aab --output=myapp.apks --mode=universal
+```
+#testing aab
+wget https://github.com/c4pt000/google-signing-apps-and-keys/releases/download/png/777.aab.tar
+tar -xvf 777.aab.tar
+
+#install bundletool
+
+wget https://github.com/google/bundletool/releases/download/1.17.0/bundletool-all-1.17.0.jar
+cp -rf bundletool-all-1.17.0.jar /usr/bin/bundletool.jar
+alias bundletool="java -jar /usr/bin/bundletool.jar"
+
+bundletool build-apks --bundle=777.aab --output=myapp.apks --mode=universal
 unzip myapp.apks -d apks
 
 
-#same key used to create my-release-key.jks here from above
-~/opt/Android/Sdk/build-tools/34.0.0-version-here-of-buildtools/apksigner sign --ks my-release-key.jks --out testing-universal.apk apks/universal.apk
+#same key used to create my-release-key.jks here from above or a new key
+keytool -genkey -v -keystore my-release-key.jks -alias alias_name -keyalg RSA -keysize 2048 -validity 10000
 
+#your current installed build-tools directory from /opt/Android/Sdk or otherwise
+~/opt/Android/Sdk/build-tools/34.0.0-version-here-of-buildtools/apksigner sign --ks my-release-key.jks --out testing-universal.apk apks/universal.apk
+```
 
 
 
